@@ -107,7 +107,4 @@ airflow tasks test <dag_id> <task_id> <execution_date>
 
 This project is for educational purposes only. For reuse or collaboration, please contact the author.
 
-```
 
-¿Deseas también que el README incluya capturas de pantalla o instrucciones para desarrollo local sin Docker?
-```
