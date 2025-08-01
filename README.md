@@ -17,7 +17,7 @@ This project provides a complete ETL pipeline and interactive dashboard to monit
 ## 🗂️ Project Structure
 
 ```
-.
+project-unit-2
 ├── Dockerfile                  # Base Dockerfile (optional use)
 ├── docker-compose.yml         # Container orchestration
 ├── requirements.txt           # Python dependencies
@@ -29,10 +29,10 @@ This project provides a complete ETL pipeline and interactive dashboard to monit
 │   └── requirements.txt       # Flask app dependencies
 
 ├── dags/
-│   ├── aggregated\_load.py     # Loads processed data into MongoDB
-│   ├── dag\_orchestrator.py    # Main Airflow DAG definition
+│   ├── aggregated_load.py     # Loads processed data into MongoDB
+│   ├── dag_orchestrator.py    # Main Airflow DAG definition
 │   ├── extract.py             # Extracts from all APIs
-│   ├── raw\_load.py            # Loads raw data into MongoDB
+│   ├── raw_load.py            # Loads raw data into MongoDB
 │   └── transform.py           # Cleans and transforms raw data
 ```
 
@@ -66,7 +66,7 @@ docker-compose up --build
 ### 3. Access the services
 
 * **Airflow Web UI**: [http://localhost:8080](http://localhost:8080)
-* **Flask Dashboard**: [http://localhost:5000](http://localhost:8501)
+* **Flask Dashboard**: [http://localhost:8501](http://localhost:8501)
 
 ### 4. Trigger the DAG
 
@@ -102,6 +102,10 @@ airflow tasks test <dag_id> <task_id> <execution_date>
 * Logs are stored under `logs/` but are not versioned.
 
 ---
+
+## 📜 License
+
+This project is for educational purposes only. For reuse or collaboration, please contact the author.
 
 ## 📜 License
 
